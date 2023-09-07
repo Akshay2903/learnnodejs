@@ -1,9 +1,8 @@
 const http = require('http')
 
 const server = http.createServer((req,res) => {
-    if(req.url == '/'){
-        res.end("Akshay")
-    }
+    console.log("Akshay")
+    process.exit()
 })
 
 server.listen(4000)
